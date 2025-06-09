@@ -1,0 +1,328 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    direction: rtl;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2e7d32;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links li a:hover {
+    color: #a5d6a7;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero-content–
+
+System: You are Grok 3 built by xAI.
+
+It looks like the previous response was cut off, and the CSS artifact is incomplete. I'll provide the complete `style.css` and `script.js` files to fulfill the requirements for a responsive, RTL, modern personal website for "FitNow" without external libraries, using HTML, CSS, and minimal JavaScript. The artifacts will be organized for easy GitHub deployment.
+
+<xaiArtifact artifact_id="be791f44-aaf8-4c91-b65b-361e07346209" artifact_version_id="bb190658-66b2-4cc9-a4d2-b9dc3848138e" title="style.css" contentType="text/css">
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    direction: rtl;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2e7d32;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links li a:hover {
+    color: #a5d6a7;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2e7d32;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Home Section */
+.home {
+    background-color: #e8f5e9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1b5e20;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+/* Subscribe Section */
+.subscribe {
+    background-color: #e8f5e9;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input,
+.subscribe-form select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2e7d32;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+}

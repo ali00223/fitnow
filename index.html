@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNow - تدريب لياقة بدنية أونلاين</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FitNow</div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#subscribe">الاشتراك</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="hero-content">
+            <h1>انضم إلى FitNow وغيّر حياتك!</h1>
+            <p>تدريبات لياقة بدنية أونلاين مصممة خصيصًا لك، في أي وقت وأي مكان.</p>
+            <button class="cta-button" onclick="scrollToSection('subscribe')">اشترك الآن</button>
+        </div>
+        <img src="hero.jpg" alt="تدريب لياقة بدنية" class="hero-image">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>من نحن</h2>
+        <p>نحن في FitNow نؤمن بأن اللياقة البدنية هي أسلوب حياة. فريقنا من المدربين المحترفين يقدم برامج تدريبية مخصصة لتحقيق أهدافك الصحية والرياضية بسهولة وفعالية.</p>
+        <img src="trainer.jpg" alt="مدرب لياقة بدنية" class="section-image">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <h2>خدماتنا</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="workout.gif" alt="تمارين شخصية">
+                <h3>تمارين شخصية</h3>
+                <p>برامج مصممة خصيصًا لتناسب احتياجاتك ومستواك.</p>
+            </div>
+            <div class="service-card">
+                <img src="nutrition.jpg" alt="إرشادات غذائية">
+                <h3>إرشادات غذائية</h3>
+                <p>خطط غذائية متوازنة تدعم أهدافك الصحية.</p>
+            </div>
+            <div class="service-card">
+                <img src="support.jpg" alt="دعم مستمر">
+                <h3>دعم مستمر</h3>
+                <p>متابعة يومية مع مدربيك لتحفيزك وإرشادك.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="section subscribe">
+        <h2>اشترك الآن</h2>
+        <p>اختر الباقة التي تناسبك وابدأ رحلتك نحو اللياقة!</p>
+        <form class="subscribe-form">
+            <input type="text" placeholder="الاسم الكامل" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <select required>
+                <option value="" disabled selected>اختر الباقة</option>
+                <option value="basic">الباقة الأساسية</option>
+                <option value="premium">الباقة المميزة</option>
+                <option value="pro">الباقة الاحترافية</option>
+            </select>
+            <button type="submit" class="cta-button">اشترك</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>اتصل بنا</h2>
+        <p>تواصلوا معنا لأي استفسار أو دعم!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="الاسم" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <textarea placeholder="رسالتك" required></textarea>
+            <button type="submit" class="cta-button">إرسال</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة © FitNow 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
