@@ -1,15 +1,23 @@
-document.querySelector('.burger').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('active');
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".burger");
+  const navLinks = document.querySelector(".nav-links");
 
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
+  burger.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
+  });
 
-document.querySelectorAll('.subscribe-form, .contact-form').forEach(form => {
-    form.addEventListener('submit', (e) => {
+  // Scroll to section smoothly if the href starts with #
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
         e.preventDefault();
-        alert('تم إرسال النموذج بنجاح!');
-        form.reset();
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
     });
+  });
 });
