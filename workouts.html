@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>التمارين - FitNow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التغذية - FitNow</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>تمارين لياقة بدنية</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="nutrition.html">التغذية</a>
-      <a href="workouts.html">التمارين</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>أنواع التمارين</h2>
-    <ul>
-      <li>الكارديو (الجري، الدراجة، المشي السريع)</li>
-      <li>المقاومة (أوزان، تمارين الجسم)</li>
-      <li>المرونة (يوغا، تمدد)</li>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">FitNow</div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">الرئيسية</a></li>
+      <li><a href="index.html#about">من نحن</a></li>
+      <li><a href="index.html#services">الخدمات</a></li>
+      <li><a href="nutrition.html">التغذية</a></li>
+      <li><a href="workouts.html">التمارين</a></li>
+      <li><a href="index.html#subscribe">الاشتراك</a></li>
+      <li><a href="index.html#contact">اتصل بنا</a></li>
     </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
 
-    <h2>خطة تمرين يومية</h2>
-    <p>ابدأ بـ 5 دقائق إحماء، ثم 20 دقيقة تمارين رئيسية، وانتهِ بـ 5 دقائق تمدد.</p>
-  </main>
+  <!-- Nutrition Section -->
+  <section class="section nutrition">
+    <h2>التغذية السليمة</h2>
+    <p>
+      نقدم في <strong>FitNow</strong> إرشادات غذائية متوازنة تعتمد على احتياجاتك الشخصية، سواء كنت تستهدف خسارة الوزن، بناء الكتلة العضلية، أو تحسين صحتك العامة. نحن نؤمن أن النظام الغذائي هو حجر الأساس لتحقيق نتائج صحية دائمة.
+    </p>
+    <img src="nutrition.jpg" alt="تغذية صحية" class="section-image">
+    <button class="cta-button" onclick="location.href='index.html#subscribe'">ابدأ خطتك الغذائية الآن</button>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 FitNow</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>جميع الحقوق محفوظة © FitNow 2025</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
