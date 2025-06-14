@@ -1,5 +1,3 @@
-/* style.css - تنسيق موقع FitNow */
-
 /* إعدادات عامة */
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -9,10 +7,21 @@ body {
   background-color: #f8f8f8;
   color: #222;
   line-height: 1.6;
+  direction: rtl;
 }
 
 h1, h2, h3 {
   color: #1c1c1c;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* شريط التنقل */
@@ -24,24 +33,24 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar .logo {
+.logo {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
   color: #fff;
-  text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -53,7 +62,8 @@ h1, h2, h3 {
 .burger {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+  cursor: pointer;
 }
 
 .burger div {
@@ -66,6 +76,12 @@ h1, h2, h3 {
 .section {
   padding: 60px 20px;
   text-align: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-content {
@@ -80,6 +96,7 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
+/* الصور العامة */
 .section-image {
   width: 100%;
   max-width: 500px;
@@ -104,7 +121,7 @@ h1, h2, h3 {
   background-color: #e67e22;
 }
 
-/* الشبكة للخدمات */
+/* الخدمات */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -113,10 +130,10 @@ h1, h2, h3 {
 }
 
 .service-card {
-  background-color: #fff;
+  background-color: #fafafa;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
@@ -126,7 +143,7 @@ h1, h2, h3 {
 
 .service-card img {
   width: 100%;
-  max-height: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -143,14 +160,15 @@ h1, h2, h3 {
 }
 
 input, select, textarea {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
+  width: 100%;
 }
 
 textarea {
-  min-height: 100px;
+  min-height: 120px;
   resize: vertical;
 }
 
@@ -159,11 +177,10 @@ textarea {
   background-color: #222;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+  padding: 20px;
 }
 
-/* تنسيق صفحة التمارين */
+/* صفحة التمارين */
 main {
   padding: 40px 20px;
   background-color: #fff;
@@ -192,4 +209,37 @@ header nav a {
 
 header nav a:hover {
   color: #f39c12;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
